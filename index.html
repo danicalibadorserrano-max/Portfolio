@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8ff;
+    color: #333;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #1e3a8a, #ec4899);
+    color: white;
+    font-weight: 600;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 70px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ec4899;
+}
+
+.hero-subtitle {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #1e3a8a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #ec4899;
+}
+
+.btn-secondary {
+    background: #ec4899;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #1e3a8a;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    width: 260px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* SKILLS */
+.skills-preview {
+    padding: 70px 0;
+    background: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #1e3a8a;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: #eef4ff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border: 2px solid #ec4899;
+}
+
+.skill-icon {
+    font-size: 30px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(90deg, #1e3a8a, #ec4899);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd1e8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="page-title">My Personal Portfolio</h1>
+
+<section class="hero">
+    <div class="container">
+
+        <div class="hero-text">
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Danica Libador Serrano</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                As a designer and developer, I'm driven by the challenge of transforming complex ideas into elegant, intuitive experiences.
+                I thrive at the intersection of creativity and logic, where thoughtful design meets clean, efficient code.
+                Every project is an opportunity to learn, experiment, and push boundaries.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://drive.google.com/drive/folders/1efBuiW6HnrB9cCS0FUhnOpqlfghqVbvl?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto&hl=en" class="btn btn-primary">View My Work</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="danica.png" alt="Danica Portfolio" class="profile-image">
+        </div>
+
+    </div>
+</section>
+
+<section class="skills-preview">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <h3>Word Document</h3>
+                <p>Professional reports and formatted documents</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-file-powerpoint"></i>
+                </div>
+                <h3>PowerPoint</h3>
+                <p>Modern presentations with animations</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-file-excel"></i>
+                </div>
+                <h3>Excel</h3>
+                <p>Data analysis and spreadsheets</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Responsive websites and web applications</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
